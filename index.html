@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reciclando para un mundo mejor</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilos CSS personalizados aquí */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FBF0FF;
+        }
+
+        header {
+            color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-right: 20px;
+            flex: 1;
+            border-radius: 10px;
+        }
+
+        .right {
+            flex: 1;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        footer a {
+            color: #3600FD;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="display-4">Reciclando para un mundo mejor</h1>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8 left">
+                <h2>Descripción</h2>
+                <p>Este sitio web está dedicado a concienciar a las personas sobre la importancia del reciclaje. Aquí encontrarás información valiosa sobre cómo el reciclaje puede ayudar a preservar nuestro planeta y cómo puedes contribuir.</p>
+                <h2>Temas Principales</h2>
+                <ul>
+                    <li>Beneficios del reciclaje</li>
+                    <li>Tipo de materiales reciclables</li>
+                    <li>Consejos para reciclar en casa</li>
+                    <li>Impacto ambiental positivo</li>
+                    <li>Nuestro compromiso</li>
+                </ul>
+                <p>¿Por qué es importante reciclar?</p>
+                <!-- Agregamos más contenido -->
+                <p>Frente a las crisis climáticas que estamos viviendo hoy en día, <p> cuenta de que el medio ambiente necesita un mejor cuidado y podemos mejorar y prevenir posibles crisis simplemente teniendo buenos hábitos. Uno de estos hábitos es reciclar para reducir desechos de todo tipo, desde desechos plásticos hasta desechos orgánicos que afectan el medio ambiente si no se desechan de forma correcta.</p>
+                <p>no reciclar puede tener varios efectos negativos en el medio ambiente y en la sociedad, incluyendo:</p>
+                <p>acumulación de residuos: Si no se reciclan materiales como plásticos, vidrio, papel y cartón, estos pueden acumularse en vertederos, ocupando un espacio valioso y contribuyendo a la contaminación del suelo y del agua.</p>
+                <p>agotamiento de recursos naturales: La fabricación de productos a partir de materias primas vírgenes requiere la extracción de recursos naturales como minerales, madera y petróleo, lo que puede agotar estos recursos finitos y dañar ecosistemas.</p>
+                <p>contaminación del aire y del agua: La incineración de residuos no reciclados y su descomposición en vertederos pueden liberar sustancias químicas tóxicas en el aire y el agua, lo que representa un riesgo para la salud humana y el medio ambiente.</p>
+                <p>impacto climático: La producción de nuevos productos a partir de materias primas vírgenes suele requerir una gran cantidad de energía, lo que puede contribuir al cambio climático. El reciclaje, por otro lado, ahorra energía y reduce las emisiones de gases de efecto invernadero.</p>
+                <p>Pérdida de empleo: La industria del reciclaje crea empleos en la recolección, procesamiento y venta de materiales reciclados. La falta de reciclaje puede resultar en la pérdida de puestos de trabajo en este sector.</p>
+                <p>Desperdicio de recursos: Cuando no se reciclan productos, se desperdician los materiales y la energía que se utilizaron para fabricarlos originalmente.</p>
+                <!-- Botón interactivo -->
+                <p>
+                    <button class="btn btn-success" id="leerMasButton">Leer Más</button>
+                </p>
+                <!-- Contenido adicional oculto inicialmente -->
+                <div id="contenidoAdicional" style="display: none;">
+                    <p>Aquí puedes encontrar información adicional sobre la importancia del reciclaje y cómo puedes hacer una diferencia. Recuerda que pequeñas acciones pueden tener un gran impacto en nuestro planeta.</p>
+                    <ul>
+                        <li>Reciclar reduce la cantidad de residuos en vertederos, lo que ahorra espacio y reduce la contaminación del suelo y del agua.</li>
+                        <li>Al reciclar, estás contribuyendo a la conservación de recursos naturales y a la reducción de la explotación de minerales y petróleo.</li>
+                        <li>El reciclaje también ayuda a reducir la contaminación del aire y del agua, lo que beneficia a la salud de todos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 right">
+                <div class="mb-3">
+                    <img src="https://encolombia.com/wp-content/uploads/2021/09/Colores-y-Simbolos-del-Reciclaje.jpg" alt="Símbolos del reciclaje" class="img-fluid rounded">
+                </div>
+                <div class="mb-3">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Plásticos reutilizables</th>
+                                <th>Residuos orgánicos que se pueden compostar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PE-HD o HDPE (Polietileno de alta densidad)</td>
+                                <td>Cáscaras de huevo</td>
+                            </tr>
+                            <tr>
+                                <td>PVC (Policloruro de vinilo)</td>
+                                <td>Residuos de origen animal</td>
+                            </tr>
+                            <tr>
+                                <td>PET o PETE (Tereftalato de polietileno)</td>
+                                <td>Restos de verduras y frutas</td>
+                            </tr>
+                            <tr>
+                                <td>LDPE (Polietileno de baja densidad)</td>
+                                <td>Tallos frescos y hojas secas</td>
+                            </tr>
+                            <tr>
+                                <td>PP (Polipropileno)</td>
+                                <td>Abonos verdes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mb-3">
+                    <a class="btn btn-danger" href="https://youtu.be/reTz2xp4pV0?si=4bd0H2DHwDR68flw">Mira el siguiente video dando clic en el texto donde enseñan a no desperdiciar los desechos orgánicos</a>
+                </div>
+                <div>
+                    <a class="btn btn-primary" href="https://youtu.be/WOR0ytnVuB4?si=Nm2EZeajoRh_x6XL">Y en este otro video vas a ver a dónde pueden llegar tus residuos plásticos si los desechas de forma correcta para darles un segundo uso</a>
+                </div>
+                <div class="mt-3">
+                    <img src="https://www.simlevante.com/wp-content/uploads/2022/10/waste-management-edited.png" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center mt-4">
+        <p>Samuel Cárdenas<br>
+            Contacto: 3163205970<br>
+            Correo: <a href="mailto:samuel102050cardenas@gmail.com">samuel102050cardenas@gmail.com</a>
+        </p>
+    </footer>
+    <!-- Enlace a Bootstrap JS (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para mostrar el contenido adicional al hacer clic en el botón
+        document.getElementById("leerMasButton").addEventListener("click", function() {
+            document.getElementById("contenidoAdicional").style.display = "block";
+        });
+    </script>
+</body>
+</html>
